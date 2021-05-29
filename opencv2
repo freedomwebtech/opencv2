@@ -1,0 +1,10 @@
+2)nano ~/.bashrc
+
+  export WORKON_HOME=$HOME/.virtualenvs
+  export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+  source /usr/local/bin/virtualenvwrapper.sh
+4) sudo nano /etc/dphys-swapfile
+   CONF_SWAPSIZE=2048
+
+5) sudo /etc/init.d/dphys-swapfile stop
+6) sudo /etc/init.d/dphys-swapfile start

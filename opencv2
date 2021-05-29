@@ -4,11 +4,17 @@
   export WORKON_HOME=$HOME/.virtualenvs
   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
   source /usr/local/bin/virtualenvwrapper.sh
-3) sudo ./install2.sh
+
+
+3)  source ~/.bashrc
+
+4) mkvirtualenv cv -p python3
+
+5) sudo ./install2.sh
   
-4) sudo nano /etc/dphys-swapfile
+6) sudo nano /etc/dphys-swapfile
    CONF_SWAPSIZE=2048
 
-5) sudo /etc/init.d/dphys-swapfile stop
-6) sudo /etc/init.d/dphys-swapfile start
-7) sudo ./install3.sh
+7) sudo /etc/init.d/dphys-swapfile stop
+8) sudo /etc/init.d/dphys-swapfile start
+9) sudo ./install3.sh
